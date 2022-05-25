@@ -44,7 +44,9 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-
+.cartMenu:hover{
+  text-decoration: none;
+}
 .cartLink{
   font-size: 24px;
 }

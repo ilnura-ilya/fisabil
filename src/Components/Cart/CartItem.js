@@ -19,9 +19,9 @@ const CartItem = ({ cartItem }) => {
           alt="note in cart"
         />
 
-        <p>{notes.name}</p>
-        <p>{quantity} x {notes.price} руб.</p>
-        <p> {totalForItem} руб.</p>
+        <p>{notes.name}&ensp;</p>
+        <p> &ensp;{quantity} x {notes.price} руб.</p>
+        <p> &ensp;{totalForItem} руб.</p>
 
         <AiOutlineDelete
           className="removeIcon"

@@ -91,7 +91,7 @@ function Home({showTopBtn, setShowTopBtn, goToTop }) {
         </Carousel.Item>
       </Carousel>
 </div>
-      
+
     </div>
   );
 }
