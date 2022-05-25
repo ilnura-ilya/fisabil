@@ -58,7 +58,7 @@ const goToTop = () => {
              <Link to="/" className="link">
             Главная
           </Link>
-          <Link to="/shop"className="link">
+          <Link to="/shop" className="link">
             Магазин
           </Link>
           <Link to="/aboutUs"  className="link">

@@ -4,17 +4,22 @@ import image1 from '../../slide1.jpg';
 import image3 from '../../slide3.jpg';
 import image4 from '../../slide4.jpg';
 import image5 from '../../slide5.jpg';
+import { Link } from 'react-router-dom'
 
 function Home({showTopBtn, setShowTopBtn, goToTop }) {
 
-  
+  const handleClick = (myLink) => () => {
+    window.location.href=myLink;
+  }
+
+
   return (
     <div>
       <div className="home">
         <div className="bgc">
           <div className="titleDiv">
             <h1 className="title">Ежедневники для мусульман</h1>
-            <a href="/shop"> <button className="moreBtn">ЗАКАЗАТЬ </button></a>
+            <Link to="/shop"><button className="moreBtn" onClick = {() => handleClick('./shop')}>ЗАКАЗАТЬ </button></Link>
           </div>
         </div>
         <span className="arrowDown">
