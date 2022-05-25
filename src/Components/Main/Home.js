@@ -14,7 +14,7 @@ function Home({showTopBtn, setShowTopBtn, goToTop }) {
         <div className="bgc">
           <div className="titleDiv">
             <h1 className="title">Ежедневники для мусульман</h1>
-            <a href="./Shop"> <button className="moreBtn">ЗАКАЗАТЬ </button></a>
+            <a href="/shop"> <button className="moreBtn">ЗАКАЗАТЬ </button></a>
           </div>
         </div>
         <span className="arrowDown">
