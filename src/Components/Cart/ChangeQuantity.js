@@ -1,3 +1,5 @@
+import { HiPlusSm, HiMinusSm } from "react-icons/hi";
+
 const ChangeQuantity = ({quantity, setQuantity}) => {
 
 
@@ -14,9 +16,12 @@ const ChangeQuantity = ({quantity, setQuantity}) => {
    }
    return (
 <div className="quantityChange">
-<button className="quantityBtn" onClick = {removeQuantity}>-</button>
+  
+      <span className="quantityBtn" onClick = {removeQuantity}><HiMinusSm/></span>
 <span>{quantity}</span>
-<button className="quantityBtn" onClick = {addQuantity}>+</button>
+<span className="quantityBtn" onClick = {addQuantity}><HiPlusSm/></span>
+  
+
 
 </div>
    )
