@@ -394,13 +394,16 @@ form {
   border-bottom: 1px solid rgba(163, 27, 27, 0.5);
   margin: 15px;
   width: 100%;
-}
-.itemsInCart {
+  background-color: rgb(161, 161, 185);
   display: flex;
+  flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 20px;
+}
+.itemsInCart {
+  
 }
 .removeIcon {
   font-size: 20px;
@@ -596,12 +599,25 @@ h4 {
     margin: 15px 0 0;
     font-size: large;
   }
+  .cartDiv{
+    padding: 30px 10px;
+    margin: 75px 10px 25px;
+  }
+  .cartItemDiv {
+    width: auto;
+
+  }
   .cartLink {
     padding: 10px 0;
     font-size: 22px;
   }
+  .cartLink span{
+    padding-left: 0;
+    margin-left: 0;
+  }
   .loginLink{
-    padding: 12px 25px;
+    padding: 12px 15px;
+    margin-right: 20px;
     font-size: 22px;
   }
 

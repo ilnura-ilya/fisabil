@@ -12,7 +12,7 @@ const CartItem = ({ cartItem }) => {
 
   return (
     <div className="cartItemDiv">
-      <div className="itemsInCart">
+     
         <img
           className="imgInCart"
           src={`${notes.img}.jpg`}
@@ -41,7 +41,7 @@ const CartItem = ({ cartItem }) => {
           }}/></div>
       </div>
       
-    </div>
+   
   );
 };
 export default CartItem;
