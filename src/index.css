@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-rows: 1fr auto;
+  text-align: center;
 }
 .nav {
   height: 70px;
@@ -276,7 +277,7 @@ ul li::marker {
 .contactDiv {
   width: 80%;
 }
-form {
+.contactDiv form {
   display: flex;
   flex-direction: column;
   width: 150%;
@@ -389,22 +390,21 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width:90%;
 }
 .cartItemDiv {
   border-bottom: 1px solid rgba(163, 27, 27, 0.5);
   margin: 15px;
-  width: 100%;
-  background-color: rgb(161, 161, 185);
+  width: 80%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
   margin-bottom: 20px;
+  padding: 10px;
 }
-.itemsInCart {
-  
-}
+
 .removeIcon {
   font-size: 20px;
 }
@@ -558,7 +558,7 @@ h4 {
   .contactDiv {
     width: 90%;
   }
-  form {
+  .contactDiv form {
     width: 95%;
   }
 }
@@ -604,7 +604,7 @@ h4 {
     margin: 75px 10px 25px;
   }
   .cartItemDiv {
-    width: auto;
+    width: 80%;
 
   }
   .cartLink {
@@ -617,7 +617,7 @@ h4 {
   }
   .loginLink{
     padding: 12px 15px;
-    margin-right: 20px;
+    padding-right: 35px;
     font-size: 22px;
   }
 
@@ -685,7 +685,7 @@ h4 {
   }
   .homeIntro,
   .contactDiv {
-    width: 100%;
+    width: 95%;
   }
   .textIntro {
     padding: 10px;
