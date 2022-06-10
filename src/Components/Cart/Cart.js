@@ -26,7 +26,7 @@ const Cart = () => {
             {totalPrice > 0 
             ?
           <StripeContainer totalPrice={totalPrice} /> :
-          <p></p>}
+          <span></span>}
   
     </div>
     </div>
