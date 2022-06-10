@@ -28,7 +28,6 @@ export const cartSlice = createSlice({
     removeItemFromCart: (state, action) => {
       state.cartItems = state.cartItems.filter(
         (cartItem) => cartItem.id !== action.payload.cartItemId
-        
       );
 
       toast.error('Товар удалён из корзины', {
@@ -37,7 +36,9 @@ export const cartSlice = createSlice({
       });
     },
 
-   
+    emptyCart: (state) => {
+      state.cartItems = [];
+    }
   },
 });
 
@@ -53,5 +54,5 @@ export const getTotalArticles = state => {
   return state.cart.cartItems.length 
 };
 
-export const { addItemToCart, removeItemFromCart } = cartSlice.actions;
+export const { addItemToCart, removeItemFromCart, emptyCart } = cartSlice.actions;
 export default cartSlice.reducer;

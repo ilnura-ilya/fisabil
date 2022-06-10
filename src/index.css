@@ -35,7 +35,7 @@ body {
 .navigationMenu {
   margin-left: auto;
 }
-.navigationMenu  ul{
+.navigationMenu ul {
   display: flex;
   padding: 0;
 }
@@ -44,12 +44,10 @@ body {
   text-decoration: none;
   text-transform: uppercase;
 }
-.cartMenu:hover{
+.cartMenu:hover {
   text-decoration: none;
 }
-.cartLink{
-  font-size: 24px;
-}
+
 .link {
   margin: 10px 10px;
   text-decoration: none;
@@ -57,9 +55,17 @@ body {
   font-family: 'Forum', cursive;
   color: #000;
 }
-.link span{
+.link span {
   text-decoration: none;
   border-bottom: none;
+}
+.cartLink {
+  font-size: 24px;
+  margin: 10px 10px 0 10px;
+}
+.loginLink{
+  font-size: 22px;
+  margin: 10px 5px 10px 10px;
 }
 .link:hover {
   color: rgb(193, 164, 96);
@@ -135,16 +141,17 @@ body {
   color: #fff;
 }
 
-.icomArrowDown{
+.icomArrowDown {
   position: relative;
-  bottom: 5%;
+  bottom: 8%;
   height: 50px;
   width: 50px;
   border-radius: 50%;
   background-color: transperent;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
-  transition: all .5;
+  transition: all 0.5;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .arrowDown a {
@@ -158,10 +165,10 @@ body {
   animation: none;
   background-color: transparent;
 }
-.arrowUp{
+.arrowUp {
   position: relative;
 }
-.iconArrowUp{
+.iconArrowUp {
   position: fixed;
   bottom: 40px;
   right: 25px;
@@ -174,9 +181,9 @@ body {
   color: #fff;
   cursor: pointer;
   animation: movebtn 3s ease-in-out infinite;
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-.iconArrowUp:hover{
+.iconArrowUp:hover {
   animation: none;
   background: #fff;
   color: rgb(193, 164, 96);
@@ -190,7 +197,8 @@ body {
   text-align: center;
   border-bottom: 1px solid rgba(130, 121, 121, 0.5);
 }
-.home, .contactDiv{
+.home,
+.contactDiv {
   margin-top: 70px;
 }
 
@@ -362,11 +370,11 @@ form {
 .categoryBtnSelect {
   border-bottom: 2px solid rgb(193, 164, 96);
 }
-.description{
+.description {
   font-family: 'Raleway', sans-serif;
   line-height: 1.4;
 }
-.showLessMore{
+.showLessMore {
   border: none;
   background-color: transparent;
   text-decoration: underline;
@@ -403,6 +411,57 @@ form {
 }
 .imgInCart {
   width: 100px;
+}
+.loginBtn {
+  background-color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  padding: 5px 20px;
+  border: 1px solid #000;
+  transition: all 0.5s ease-out;
+}
+.loginBtn:hover{
+  background-color: rgb(193, 164, 96);
+  
+  color: #fff;
+}
+.loginMenu {
+  background: #fff;
+  width: 300px;
+  height: auto;
+  padding: 15px 30px 30px;
+  position: fixed;
+  margin: auto;
+  top: 70px;
+  right: 0;
+  border: 1px solid black;
+  z-index: 99;
+}
+.close {
+  display: none;
+}
+.open {
+  display: block;
+}
+.accountInfo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.accountInfo small{
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.accountInfo small span{
+  text-transform: lowercase;
+  font-weight: 400;
+}
+.accountPict {
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 .footer {
   background: rgb(236, 225, 201);
@@ -464,7 +523,17 @@ h4 {
   margin: 0;
   text-align: left;
 }
-
+.payment{
+  margin: 40px;
+}
+.payBtn{
+  margin: 20px 0;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  padding: 6px;
+  background-color: rgb(236, 225, 201);
+  border: none;
+}
 @media screen and (max-width: 928px) {
   .businessDiv {
     display: flex;
@@ -513,7 +582,9 @@ h4 {
     top: 15px;
     right: 10px;
   }
-  
+  .loginMenu {
+    width:100%;
+  }
   .brandName {
     position: absolute;
     left: 40%;
@@ -525,11 +596,15 @@ h4 {
     margin: 15px 0 0;
     font-size: large;
   }
-  .cartLink{
+  .cartLink {
     padding: 10px 0;
     font-size: 22px;
   }
- 
+  .loginLink{
+    padding: 12px 25px;
+    font-size: 22px;
+  }
+
   .navigationMenu {
     display: none;
   }
@@ -639,19 +714,19 @@ h4 {
   }
 }
 @keyframes movebtn {
-  0%{
+  0% {
     transform: translateY(0px);
   }
-  25%{
+  25% {
     transform: translateY(10px);
   }
-  50%{
+  50% {
     transform: translateY(0px);
   }
-  75%{
+  75% {
     transform: translateY(-10px);
   }
-  100%{
+  100% {
     transform: translateY(0px);
   }
 }

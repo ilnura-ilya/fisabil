@@ -7,14 +7,21 @@ import "bootstrap/dist/js/bootstrap.min.js"
 import "bootstrap/dist/css/bootstrap.min.css"
 import { store } from './redux/store'
 import { Provider } from 'react-redux'
+import { Auth0Provider } from "@auth0/auth0-react";
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+      <Auth0Provider
+    domain="dev-xrk4924a.us.auth0.com"
+    clientId="Q75tjF7HwPx9Sc2KlgdPlzTzcGZLQAU5"
+    redirectUri={window.location.origin}
+  >
     <Provider store={store}>
       <App /> 
     </Provider>
+    </Auth0Provider>
   </React.StrictMode>
 );
 
