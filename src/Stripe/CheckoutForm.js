@@ -49,7 +49,7 @@ export const CheckoutForm = ({ totalPrice }) => {
   return (
     <div className='payment' >
       {!messageSuccess ? (
-        <form onSubmit={handleSubmit} style={{ width: 330 }}>
+        <form onSubmit={handleSubmit} className="cardPayment">
           <CardElement />
           <button className='payBtn'>ОПЛАТИТЬ</button>
         </form>

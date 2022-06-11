@@ -55,7 +55,7 @@ const toggleMobile = () => {
 
 if (isLoading) return <h1>Wait....</h1>
   return (
-    <div className='main'>
+    <div>
       <Router>
         <nav className='nav'>
            <Link to="/" className="brandName" onClick = {toggleMobile}>
@@ -90,8 +90,8 @@ if (isLoading) return <h1>Wait....</h1>
           </div>
          
           <div className="cartMenu" onClick = {() => setIsMobile(false)}>
-            <span className="loginLink link" onClick = {toggleLogin}>
-              <HiOutlineUser /> </span>
+            <div className="loginLink link" onClick = {toggleLogin}>
+              <HiOutlineUser /> </div>
               <div className={isActive ? 'loginMenu close' : 'loginMenu open'}>
                 <Login />
               </div>
@@ -100,11 +100,11 @@ if (isLoading) return <h1>Wait....</h1>
           </div>
         
             <Link to="/cart" className="cartMenu" onClick = {toggleMobile}>
-            <span className="cartLink link">
-              <HiOutlineShoppingBag /> {totalItems > 0 &&
+            <div className="cartLink link">
+              <span><HiOutlineShoppingBag /></span> {totalItems > 0 &&
               <span>{totalItems}</span>
               } 
-            </span>
+            </div>
           </Link>
           
             

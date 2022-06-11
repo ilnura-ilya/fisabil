@@ -38,10 +38,9 @@ const CartItem = ({ cartItem }) => {
                 padding: '20px'
               }
             },
-          }}/></div>
+          }}/>
+          </div>
       </div>
-      
-   
-  );
+   );
 };
 export default CartItem;
