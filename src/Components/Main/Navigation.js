@@ -100,11 +100,13 @@ if (isLoading) return <h1>Wait....</h1>
           </div>
         
             <Link to="/cart" className="cartMenu" onClick = {toggleMobile}>
-            <div className="cartLink link">
-              <span><HiOutlineShoppingBag /></span> {totalItems > 0 &&
-              <span>{totalItems}</span>
-              } 
-            </div>
+            <button className="cartLink link">
+              
+              <span className='cartIcon'><HiOutlineShoppingBag /></span>
+              {totalItems > 0 &&
+              <span className='totalItemsCart'>{totalItems}</span>
+              }
+            </button>
           </Link>
           
             

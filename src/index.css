@@ -63,11 +63,22 @@ body {
 }
 .cartLink {
   font-size: 22px;
+  width: 50px;
   margin: 0 10px 0 0;
+  background-color: transparent;
+  border: none;
+}
+.cartIcon{
+  text-align: right;
+  padding-right: 1.6px;
+}
+.totalItemsCart{
+  font-size: 19px;
+  color: red;
 }
 .loginLink{
   font-size: 22px;
- 
+  margin-right: 0;
 }
 .link:hover {
   color: rgb(193, 164, 96);
@@ -382,10 +393,6 @@ ul li::marker {
   text-decoration: underline;
 }
 
-.cart {
-  font-size: 18px;
-}
-
 .cartDiv {
   padding: 30px;
   display: flex;
@@ -422,10 +429,10 @@ ul li::marker {
   padding: 5px 20px;
   border: 1px solid #000;
   transition: all 0.5s ease-out;
+  margin-top: 15px;
 }
 .loginBtn:hover{
   background-color: rgb(193, 164, 96);
-  
   color: #fff;
 }
 .loginMenu {
@@ -592,7 +599,7 @@ h4 {
   .cartMenu {
     position: absolute;
     top: -5px;
-    right: 15px;
+    right: 10px;
   }
   .loginMenu {
     width:100%;
@@ -618,14 +625,12 @@ h4 {
   .cartLink {
     padding: 10px 0;
     font-size: 22px;
+    margin-left: 10px;
   }
-  .cartLink span{
-    padding-left: 0;
-    margin-left: 0;
-  }
+  
   .loginLink{
     padding: 10px 15px;
-    padding-right: 35px;
+    padding-right: 40px;
     font-size: 22px;
   }
 
