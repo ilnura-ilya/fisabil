@@ -582,7 +582,7 @@ h4 {
   .hamburger {
     display: block;
     position: absolute;
-    left: 10px;
+    left: 8px;
     top: 37%;
   }
 
@@ -599,7 +599,7 @@ h4 {
   .cartMenu {
     position: absolute;
     top: -5px;
-    right: 10px;
+    right: 5px;
   }
   .loginMenu {
     width:100%;
@@ -625,12 +625,12 @@ h4 {
   .cartLink {
     padding: 10px 0;
     font-size: 22px;
-    margin-left: 10px;
+    margin-left: 15px;
   }
   
   .loginLink{
     padding: 10px 15px;
-    padding-right: 40px;
+    padding-right: 42px;
     font-size: 22px;
   }
 

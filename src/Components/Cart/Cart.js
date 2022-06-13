@@ -7,7 +7,7 @@ import StripeContainer from '../../Stripe/StripeContainer';
 const Cart = () => {
   const cartItems = useSelector(getCartItems);
   const totalPrice = useSelector(getTotalPrice);
-  const { isAuthenticated, loginWithRedirect } = useAuth0();
+  const { isAuthenticated } = useAuth0();
 
   return (
   
@@ -28,12 +28,11 @@ const Cart = () => {
             
             <div className="stripeCon">
                <StripeContainer totalPrice={totalPrice}/> 
-            </div> }
+              
+            </div> 
+            }
              
-            { !isAuthenticated && (
-               <button className='loginBtn' onClick={() => loginWithRedirect()}>ВОЙТИ И ОПЛАТИТЬ</button>
-            )
-           }
+            
             
        
   
